@@ -133,8 +133,9 @@ struct DoubleType
         return lhs * rhs;
     }
     double divide( double lhs, double rhs )
-    {
-        if ( rhs == 0 )
+    {    
+        double dzero = 0;
+        if ( rhs == dzero )
         {
             std::cout  << std::endl;
             std::cout  << "warning, floating point division by zero returns 'inf'" << std::endl;
